@@ -17,6 +17,7 @@
   "scripts": {
     "start": "PORT=10000 craco start",
     "build": "craco build",
+ "deploy": "pm2 reload present_client || pm2 serve build 10000 --spa --name present_client",
     "test": "craco test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
