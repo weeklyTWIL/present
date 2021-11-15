@@ -84,7 +84,7 @@ function Host() {
   useEffect(() => {
     if (host) {
       const peer = new Peer(host, {
-        host: "localhost",
+        host: "present.mathematikoi.xyz",
         port: 80,
         path: "/server/peerjs",
       });
@@ -113,7 +113,7 @@ function Host() {
 
   const register_host = (credentials) => {
     set_host(credentials.name);
-    const socket = io("http://localhost", {
+    const socket = io("http://present.mathematikoi.xyz", {
       path: "/server/socketio",
       auth: credentials,
       reconnection: false,

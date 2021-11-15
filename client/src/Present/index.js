@@ -16,7 +16,7 @@ function Present() {
         .then((stream) => {
           console.log(stream)
           const peer = new Peer({
-            host: "localhost",
+            host: "present.mathematikoi.xyz",
             port: 80,
             path: "/server/peerjs",
           });
